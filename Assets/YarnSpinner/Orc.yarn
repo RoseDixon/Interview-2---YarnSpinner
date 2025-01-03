@@ -1,0 +1,59 @@
+﻿title: Orc
+
+position: -465,-533
+---
+
+Orc: Hey there, what's up?
+    -> I'm here to talk about magic.
+        <<jump Magic>>
+    -> I'd love to know more about these trees
+        <<jump Trees>>
+    -> Uhh...nothing for now, thanks!
+        <<jump Exit>>
+===
+
+title: More
+
+position: -465,-533
+---
+
+Orc: Wanna talk about something else?
+    -> I'm here to talk about magic.
+        <<jump Magic>>
+    -> I'd love to know more about these trees
+        <<jump Trees>>
+    -> Uhh...nothing for now, thanks!
+        <<jump Exit>>
+===
+
+title: Magic
+
+position: -465,-354
+---
+
+Orc: Magic? What do you want to know?
+    -> How to turn into a cat? If that's even possible.
+Orc: Hmm, that's not one I've heard of before unfortunately.
+Orc: I can tell you about these trees though if you'd like?
+    -> Sure, why not!
+    <<jump Trees>>
+===
+
+title: Trees
+position: -220,-355
+---
+
+Orc: Ahh yes...trees.
+Orc: Did you know trees are the humans of the plant world? 
+Orc: Truly amazing.
+    -> Wow! That's awesome!
+    <<jump More>>
+===
+
+title: Exit
+position: -197,-533
+---
+
+Orc: Oh...okay
+Orc: Well uhh...have a nice day!
+===
