@@ -5,12 +5,10 @@ using UnityEngine;
 public class triggerE : MonoBehaviour
 {
     public GameObject uiObject;
-    
     void Start()
     {
         uiObject.SetActive(false);
     }
-
     void OnTriggerEnter2D(Collider2D player)
     {
         if (player.gameObject.tag == "Player")
@@ -18,7 +16,6 @@ public class triggerE : MonoBehaviour
             uiObject.SetActive(true);
         }
     }
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))

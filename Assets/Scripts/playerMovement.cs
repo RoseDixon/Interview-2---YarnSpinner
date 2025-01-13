@@ -27,7 +27,5 @@ public class playerMovement : MonoBehaviour
         {
             body.MovePosition(body.position + movementVector * speed * Time.deltaTime);
         }
-
-        
     }
 }

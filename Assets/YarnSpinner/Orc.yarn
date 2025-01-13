@@ -4,6 +4,7 @@ position: -465,-533
 ---
 
 Orc: Hey there, what's up?
+<<NPCJump Orc>>
     -> I'm here to talk about magic.
         <<jump Magic>>
     -> I'd love to know more about these trees
@@ -18,10 +19,6 @@ position: -465,-533
 ---
 
 Orc: Wanna talk about something else?
-    -> I'm here to talk about magic.
-        <<jump Magic>>
-    -> I'd love to know more about these trees
-        <<jump Trees>>
     -> Uhh...nothing for now, thanks!
         <<jump Exit>>
 ===
@@ -53,7 +50,6 @@ Orc: Truly amazing.
 title: Exit
 position: -197,-533
 ---
-
 Orc: Oh...okay
 Orc: Well uhh...have a nice day!
 ===
