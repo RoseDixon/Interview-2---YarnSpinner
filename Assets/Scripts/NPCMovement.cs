@@ -10,7 +10,7 @@ public class NPCMovement : MonoBehaviour
     private Vector2 maxWalkPoint;
 
     private Rigidbody2D orcRigidBody;
-    
+
     public bool isWalking;
 
     public float walkTime;
@@ -29,7 +29,7 @@ public class NPCMovement : MonoBehaviour
     void Start()
     {
         orcRigidBody = GetComponent<Rigidbody2D>();
-        
+
         waitCounter = waitTime;
         walkCounter = walkTime;
 

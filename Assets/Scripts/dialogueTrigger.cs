@@ -9,12 +9,7 @@ public class dialogueTrigger : MonoBehaviour
     public DialogueRunner dialogueRunner;
     private playerMovement player;
     private NPCMovement orc;
-
-    [YarnCommand("NPCJump")]
-    public void NPCJump()
-    {
-        Debug.Log($"Orc is jumping!");
-    }
+    [YarnCommand("camera_look")]
 
     void Start()
     {
@@ -30,6 +25,18 @@ public class dialogueTrigger : MonoBehaviour
             player.canMove = false;
             orc.NPCcanMove = false;
         }
+    }
+
+    public void Awake()
+    {
+        dialogueRunner.AddCommandHandler<GameObject>("camera_look", CameraLookAtTarget);
+    }
+
+    private void CameraLookAtTarget(GameObject Target)
+    {
+       
+        Camera.main.transform.LookAt(Target.transform);
+        
     }
 
     public void onDialogueComplete()
